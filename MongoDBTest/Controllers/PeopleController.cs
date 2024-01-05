@@ -10,6 +10,8 @@ namespace MongoDBTest.Controllers;
 [Produces("application/json")]
 [Route("[controller]/[action]")]
 [ApiController]
+[ProducesResponseType(StatusCodes.Status400BadRequest)]
+[ProducesResponseType(StatusCodes.Status404NotFound)]
 public sealed class PeopleController : ControllerBase
 {
     private readonly PeopleService _peopleService;
