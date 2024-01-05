@@ -8,7 +8,7 @@ public sealed class People
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public int Id { get; set; }
+    public string Id { get; set; } = string.Empty;
 
     [BsonElement("name")]
     public string Name { get; set; } = string.Empty;
@@ -20,5 +20,5 @@ public sealed class People
     public int Type { get; set; }
 
     [BsonElement("value")]
-    public int[] Value { get; set; } = Array.Empty<int>();
+    public double[] Value { get; set; } = Array.Empty<double>();
 }

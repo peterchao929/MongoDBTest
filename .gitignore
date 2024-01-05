@@ -1,0 +1,4 @@
+*.suo
+.vs
+MongoDBTest/bin
+MongoDBTest/obj
